@@ -1,3 +1,27 @@
+.avatar {
+	width: 80px;
+}
+.name {
+	font-size: 20px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.status__green {
+	display: block;
+	width: 25px;
+	height: 25px;
+	background-color: green;
+	border-radius: 50%;
+}
+
+.status__red {
+	display: block;
+	width: 25px;
+	height: 25px;
+	background-color: red;
+	border-radius: 50%;
+}
 .friend {
 	display: flex;
 	justify-content: space-between;
@@ -8,28 +32,4 @@
 }
 .friend:not(:last-child) {
 	margin-bottom: 10px;
-}
-.avatar {
-	width: 80px;
-}
-.name {
-	font-size: 20px;
-	margin-bottom: 10px;
-	text-transform: uppercase;
-	font-weight: 700;
-}
-.statusGreen {
-	display: block;
-	width: 25px;
-	height: 25px;
-	background-color: green;
-	border-radius: 50%;
-}
-
-.statusRed {
-	display: block;
-	width: 25px;
-	height: 25px;
-	background-color: red;
-	border-radius: 50%;
 }
