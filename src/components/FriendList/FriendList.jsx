@@ -1,15 +1,25 @@
+import propTypes from "prop-types";
 import { FriendListItem } from '../FriendListItem/FriendListItem';
 
 export function FriendList({ friends }) {
 	return (
 		<ul>
-			{friends.map(friend => (
+			{friends.map(({ id, avatar, name, isOnline }) => (
 				<FriendListItem
-					avatar={friend.avatar}
-					name={friend.name}
-					isOnline={friend.isOnline}
+					key={id}
+					avatar={avatar}
+					name={name}
+					isOnline={isOnline}
 				/>
 			))}
 		</ul>
 	);
 }
+
+FriendList.propTypes = {
+	id: propTypes.number,
+	avatar: propTypes.string,
+	name: propTypes.string,
+	isOnline: propTypes.bool,
+}
+

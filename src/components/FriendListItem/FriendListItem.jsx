@@ -1,3 +1,4 @@
+import propTypes from "prop-types";
 import css from './FriendListItem.module.css';
 
 export function FriendListItem({ id, avatar, name, isOnline }) {
@@ -10,4 +11,11 @@ export function FriendListItem({ id, avatar, name, isOnline }) {
 			<p className={css.name}>{name}</p>
 		</li>
 	);
+}
+
+FriendListItem.propTypes = {
+	id: propTypes.number,
+	avatar: propTypes.string,
+	name: propTypes.string,
+	isOnline: propTypes.bool,
 }
