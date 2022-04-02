@@ -1,4 +1,4 @@
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import css from './Statistics.module.css';
 
 export const Statistics = ({ stats, title }) => {
@@ -23,6 +23,6 @@ export const Statistics = ({ stats, title }) => {
 };
 
 Statistics.propTypes = {
-	stats: propTypes.array,
-	title: propTypes.string,
+	stats: PropTypes.arrayOf(PropTypes.number),
+	title: PropTypes.string,
 }
