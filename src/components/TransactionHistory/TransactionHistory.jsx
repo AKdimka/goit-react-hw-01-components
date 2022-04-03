@@ -1,4 +1,4 @@
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import css from './TransactionHistory.module.css';
 
 export function TransactionHistory({ items }) {
@@ -25,5 +25,5 @@ export function TransactionHistory({ items }) {
 }
 
 TransactionHistory.propTypes = {
-	items: propTypes.array,
+	items: PropTypes.arrayOf(PropTypes.object),
 }

@@ -3,7 +3,7 @@ import css from './FriendListItem.module.css';
 
 export function FriendListItem({ id, avatar, name, isOnline }) {
 	return (
-		<li className={css.friend} key={id}>
+		<li className={css.friend} >
 			<span
 				className={isOnline ? `${css.status__green}` : `${css.status__red}`}
 			></span>
@@ -14,7 +14,6 @@ export function FriendListItem({ id, avatar, name, isOnline }) {
 }
 
 FriendListItem.propTypes = {
-	id: propTypes.number.isRequired,
 	avatar: propTypes.string.isRequired,
 	name: propTypes.string.isRequired,
 	isOnline: propTypes.bool.isRequired,
