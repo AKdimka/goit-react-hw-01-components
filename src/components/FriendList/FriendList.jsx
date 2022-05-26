@@ -6,8 +6,9 @@ import { FriendListItem } from '../FriendListItem/FriendListItem';
 export function FriendList({ friends }) {
 	return (
 		<ul className={css.friendList}>
-			{friends.map(({ avatar, name, isOnline }) => (
+			{friends.map(({ id, avatar, name, isOnline }) => (
 				<FriendListItem
+					key={id}
 					avatar={avatar}
 					name={name}
 					isOnline={isOnline}

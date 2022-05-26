@@ -1,9 +1,9 @@
-import propTypes from "prop-types";
+import PropTypes from "prop-types";
 import css from './FriendListItem.module.css';
 
-export function FriendListItem({ id, avatar, name, isOnline }) {
+export function FriendListItem({ avatar, name, isOnline }) {
 	return (
-		<li className={css.friend} >
+		<li className={css.friend}>
 			<span
 				className={isOnline ? `${css.status__green}` : `${css.status__red}`}
 			></span>
@@ -14,7 +14,7 @@ export function FriendListItem({ id, avatar, name, isOnline }) {
 }
 
 FriendListItem.propTypes = {
-	avatar: propTypes.string.isRequired,
-	name: propTypes.string.isRequired,
-	isOnline: propTypes.bool.isRequired,
+	avatar: PropTypes.string.isRequired,
+	name: PropTypes.string.isRequired,
+	isOnline: PropTypes.bool.isRequired,
 }
